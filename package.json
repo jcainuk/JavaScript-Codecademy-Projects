@@ -1,0 +1,24 @@
+{
+  "name": "javascript-codecademy-projects",
+  "version": "1.0.0",
+  "description": "These are JavaScript projects I have created in Codecademy, primarily under the Full-Stack Engineer Career Path.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jcainuk/JavaScript-Codecademy-Projects.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jcainuk/JavaScript-Codecademy-Projects/issues"
+  },
+  "homepage": "https://github.com/jcainuk/JavaScript-Codecademy-Projects#readme",
+  "devDependencies": {
+    "eslint": "^8.7.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.25.4"
+  }
+}
