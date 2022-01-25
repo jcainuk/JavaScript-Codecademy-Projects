@@ -9,7 +9,8 @@ const fahrenheit = Math.floor(celsius * (9 / 5) + 32);
 
 console.log(`The temperature is ${fahrenheit} degrees Fahrenheit.`);
 
-// Conversion of celsius to Newton scale
+// Extra Practice
+// Conversion of celsius to Newton Scale and round down result
 const newton = Math.floor(celsius * (33 / 100));
 
 console.log(`The temperature is ${newton} on the Newton scale.`);
