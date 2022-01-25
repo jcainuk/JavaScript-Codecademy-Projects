@@ -19,6 +19,7 @@ The goal of this repository is to document my progress while learning JavaScript
 ## JavaScript Syntax, Part I
 
 - Kelvin Weather
+- Dog Years
 
 * [Example Project](https://)
 
