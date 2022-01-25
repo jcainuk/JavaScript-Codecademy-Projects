@@ -18,8 +18,9 @@ The goal of this repository is to document my progress while learning JavaScript
 
 ## JavaScript Syntax, Part I
 
-- [Example Project](https://)
-- [Example Project](https://)
+- Kelvin Weather
+
+* [Example Project](https://)
 
 ## JavaScript Syntax, Part II
 
