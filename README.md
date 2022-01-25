@@ -21,6 +21,7 @@ The goal of this repository is to document my progress while learning JavaScript
 - Kelvin Weather
 - Dog Years
 - Magic Eight Ball
+- Race Day
 
 * [Example Project](https://)
 
