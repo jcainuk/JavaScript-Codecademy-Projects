@@ -22,6 +22,7 @@ The goal of this repository is to document my progress while learning JavaScript
 - Dog Years
 - Magic Eight Ball
 - Race Day
+- Rock, Paper, or Scissors
 
 * [Example Project](https://)
 
