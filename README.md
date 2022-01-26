@@ -24,6 +24,7 @@ The goal of this repository is to document my progress while learning JavaScript
 - Race Day
 - Rock, Paper, or Scissors
 - Sleep Debt Calculator
+- Training Days
 
 * [Example Project](https://)
 
