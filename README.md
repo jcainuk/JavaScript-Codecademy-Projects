@@ -23,6 +23,7 @@ The goal of this repository is to document my progress while learning JavaScript
 - Magic Eight Ball
 - Race Day
 - Rock, Paper, or Scissors
+- Sleep Debt Calculator
 
 * [Example Project](https://)
 
