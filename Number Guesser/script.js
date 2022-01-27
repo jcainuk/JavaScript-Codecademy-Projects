@@ -1,6 +1,6 @@
 let humanScore = 0;
 let computerScore = 0;
-const currentRoundNumber = 1;
+let currentRoundNumber = 1;
 
 // Write your code below:
 
@@ -30,4 +30,9 @@ const updateScore = (winner) => {
   } else if (winner === 'computer') {
     computerScore += 1;
   }
+};
+
+// update round number
+const advanceRound = () => {
+  currentRoundNumber += 1;
 };
