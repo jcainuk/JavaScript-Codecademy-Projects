@@ -1,5 +1,5 @@
-const humanScore = 0;
-const computerScore = 0;
+let humanScore = 0;
+let computerScore = 0;
 const currentRoundNumber = 1;
 
 // Write your code below:
@@ -21,4 +21,13 @@ const compareGuesses = (humanGuess, computerGuess, targetGuess) => {
   const humanDiffFromTarget = difference(targetGuess, humanGuess);
 
   return computerDiffFromTarget > humanDiffFromTarget;
+};
+
+// increase winner's score each round
+const updateScore = (winner) => {
+  if (winner === 'human') {
+    humanScore += 1;
+  } else if (winner === 'computer') {
+    computerScore += 1;
+  }
 };
