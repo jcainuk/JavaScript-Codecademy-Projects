@@ -25,6 +25,7 @@ The goal of this repository is to document my progress while learning JavaScript
 - Rock, Paper, or Scissors
 - Sleep Debt Calculator
 - Training Days
+- Number Guesser
 
 * [Example Project](https://)
 
