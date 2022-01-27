@@ -12,15 +12,15 @@ const generateTarget = () => Math.floor(Math.random() * 10);
 const compareGuesses = (humanGuess, computerGuess, targetGuess) => {
   if (humanGuess === computerGuess) {
     return true;
+  } if (humanGuess !== computerGuess) {
+    const difference = (a, b) => Math.abs(a - b);
+
+    const computerDiffFromTarget = difference(targetGuess, computerGuess);
+
+    const humanDiffFromTarget = difference(targetGuess, humanGuess);
+
+    return computerDiffFromTarget > humanDiffFromTarget;
   }
-
-  const difference = (a, b) => Math.abs(a - b);
-
-  const computerDiffFromTarget = difference(targetGuess, computerGuess);
-
-  const humanDiffFromTarget = difference(targetGuess, humanGuess);
-
-  return computerDiffFromTarget > humanDiffFromTarget;
 };
 
 // increase winner's score each round
