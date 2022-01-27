@@ -16,10 +16,9 @@ const compareGuesses = (humanGuess, computerGuess, targetGuess) => {
     const difference = (a, b) => Math.abs(a - b);
 
     const computerDiffFromTarget = difference(targetGuess, computerGuess);
-
     const humanDiffFromTarget = difference(targetGuess, humanGuess);
 
-    return computerDiffFromTarget > humanDiffFromTarget;
+    return humanDiffFromTarget <= computerDiffFromTarget;
   }
 };
 
