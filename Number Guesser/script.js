@@ -10,16 +10,12 @@ const generateTarget = () => Math.floor(Math.random() * 10);
 // determine which guess is closest to target each round
 
 const compareGuesses = (humanGuess, computerGuess, targetGuess) => {
-  if (humanGuess === computerGuess) {
-    return true;
-  } if (humanGuess !== computerGuess) {
-    const difference = (a, b) => Math.abs(a - b);
+  const difference = (a, b) => Math.abs(a - b);
 
-    const computerDiffFromTarget = difference(targetGuess, computerGuess);
-    const humanDiffFromTarget = difference(targetGuess, humanGuess);
+  const computerDiffFromTarget = difference(targetGuess, computerGuess);
+  const humanDiffFromTarget = difference(targetGuess, humanGuess);
 
-    return humanDiffFromTarget <= computerDiffFromTarget;
-  }
+  return humanDiffFromTarget <= computerDiffFromTarget;
 };
 
 // increase winner's score each round
