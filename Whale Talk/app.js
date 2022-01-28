@@ -1,12 +1,11 @@
 // Sentence to translate to whale language
-const sentence1 = 'use systems not goals';
+const input = 'use systems not goals';
 
 /* Translate English to whale language:
 - Whale language has no consonants
 - Whale language only uses vowels
 - 'Y' is not a vowel for whales
 - 'e' and 'u' must be sang twice
-- All vowels must be capital letters
 */
 
 const translateToWhale = (input) => {
@@ -39,4 +38,6 @@ const translateToWhale = (input) => {
   return resultArray.join('');
 };
 
-console.log(translateToWhale(sentence1));
+console.log(translateToWhale(input));
+console.log(translateToWhale('Hi, Human'));
+console.log(translateToWhale('a whale of a deal!'));
