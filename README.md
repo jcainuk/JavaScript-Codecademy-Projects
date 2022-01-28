@@ -30,6 +30,7 @@ The goal of this repository is to document my progress while learning JavaScript
 
 ## JavaScript Syntax, Part II
 
+- Secret Message
 - [Example Project](https://)
 
 ## JavaScript Syntax Portfolio Project
