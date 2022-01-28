@@ -31,6 +31,7 @@ The goal of this repository is to document my progress while learning JavaScript
 ## JavaScript Syntax, Part II
 
 - Secret Message
+- Whale Talk
 - [Example Project](https://)
 
 ## JavaScript Syntax Portfolio Project
