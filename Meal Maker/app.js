@@ -71,4 +71,7 @@ const menu = {
     }
   },
 
+  // get a random dish from menu course
+  getRandomDishFromCourse(courseName) {},
+
 };
