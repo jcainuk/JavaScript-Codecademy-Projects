@@ -64,6 +64,16 @@ const team = {
   },
 };
 
+// invoke addPlayer method
 team.addPlayer('Steph', 'Curry', 28);
 team.addPlayer('Lisa', 'Leslie', 44);
 team.addPlayer('Bugs', 'Bunny', 76);
+
+// invoke addGame method
+team.addGame('Unicorns', 42, 35);
+team.addGame('Rhinos', 20, 20);
+team.addGame('Elephants', 10, 36);
+
+///
+console.log(team.players);
+console.log(team.games);
