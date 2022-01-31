@@ -72,17 +72,17 @@ const menu = {
   },
   // get a random dish from menu course
   getRandomDishFromCourse(courseName) {
-    const dishes = this._courses[courseName];
-
+    const dishes = this._courses.courseName;
+    console.log(dishes);
     const randomIndex = Math.floor(Math.random() * dishes.length);
 
     return dishes[randomIndex];
   },
   // generate a random meal
   generateRandomMeal() {
-    const appetizer = this.getRandomDishFromCourse('appetizer');
-    const main = this.getRandomDishFromCourse('main');
-    const dessert = this.getRandomDishFromCourse('dessert');
+    const appetizer = this.getRandomDishFromCourse('appetizers');
+    const main = this.getRandomDishFromCourse('mains');
+    const dessert = this.getRandomDishFromCourse('desserts');
 
     return `You have ordered the following:
 ${appetizer.name}: ${appetizer.price},
@@ -90,5 +90,23 @@ ${main.name}: ${main.price},
 ${dessert.name}: ${dessert.price}
 Total Cost : ${appetizer.price + main.price + dessert.price}`;
   },
-
 };
+
+// add appetizers
+menu.addDishToCourse('appetizer', 'garlic bread', 3);
+menu.addDishToCourse('appetizer', 'mushroom soup', 2);
+menu.addDishToCourse('appetizer', 'calamari', 3.5);
+
+// add mains
+menu.addDishToCourse('main', 'lasagne', 4);
+menu.addDishToCourse('main', 'roast chicken', 10);
+menu.addDishToCourse('main', 'pizza', 11);
+
+// add desserts
+menu.addDishToCourse('dessert', 'ice cream', 6);
+menu.addDishToCourse('dessert', 'cake', 5);
+menu.addDishToCourse('dessert', 'biscuits', 2);
+
+// generate a meal
+const meal = menu.generateRandomMeal();
+console.log(meal);
