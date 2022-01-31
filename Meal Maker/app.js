@@ -72,6 +72,7 @@ const menu = {
   },
   // get a random dish from menu course
   getRandomDishFromCourse(courseName) {
+    console.log(this._courses);
     const dishes = this._courses.courseName;
     console.log(dishes);
     const randomIndex = Math.floor(Math.random() * dishes.length);
@@ -93,19 +94,19 @@ Total Cost : ${appetizer.price + main.price + dessert.price}`;
 };
 
 // add appetizers
-menu.addDishToCourse('appetizer', 'garlic bread', 3);
-menu.addDishToCourse('appetizer', 'mushroom soup', 2);
-menu.addDishToCourse('appetizer', 'calamari', 3.5);
+menu.addDishToCourse('appetizers', 'garlic bread', 3);
+menu.addDishToCourse('appetizers', 'mushroom soup', 2);
+menu.addDishToCourse('appetizers', 'calamari', 3.5);
 
 // add mains
-menu.addDishToCourse('main', 'lasagne', 4);
-menu.addDishToCourse('main', 'roast chicken', 10);
-menu.addDishToCourse('main', 'pizza', 11);
+menu.addDishToCourse('mains', 'lasagne', 4);
+menu.addDishToCourse('mains', 'roast chicken', 10);
+menu.addDishToCourse('mains', 'pizza', 11);
 
 // add desserts
-menu.addDishToCourse('dessert', 'ice cream', 6);
-menu.addDishToCourse('dessert', 'cake', 5);
-menu.addDishToCourse('dessert', 'biscuits', 2);
+menu.addDishToCourse('desserts', 'ice cream', 6);
+menu.addDishToCourse('desserts', 'cake', 5);
+menu.addDishToCourse('desserts', 'biscuits', 2);
 
 // generate a meal
 const meal = menu.generateRandomMeal();
