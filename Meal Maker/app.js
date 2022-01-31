@@ -70,8 +70,11 @@ const menu = {
       return 'Please enter valid details';
     }
   },
-
   // get a random dish from menu course
-  getRandomDishFromCourse(courseName) {},
+  getRandomDishFromCourse(courseName) {
+    const dishes = this._courses[courseName];
+
+    const randomIndex = Math.floor(Math.random() * dishes.length);
+  },
 
 };
