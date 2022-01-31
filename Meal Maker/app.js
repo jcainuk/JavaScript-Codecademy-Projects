@@ -78,5 +78,17 @@ const menu = {
 
     return dishes[randomIndex];
   },
+  // generate a random meal
+  generateRandomMeal() {
+    const appetizer = this.getRandomDishFromCourse('appetizer');
+    const main = this.getRandomDishFromCourse('main');
+    const dessert = this.getRandomDishFromCourse('dessert');
+
+    return `You have ordered the following:
+${appetizer.name}: ${appetizer.price},
+${main.name}: ${main.price},
+${dessert.name}: ${dessert.price}
+Total Cost : ${appetizer.price + main.price + dessert.price}`;
+  },
 
 };
