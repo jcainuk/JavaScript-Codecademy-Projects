@@ -35,4 +35,11 @@ const team = {
     },
   ],
 
+  get _players() {
+    return this._players;
+  },
+  get _games() {
+    return this._games;
+  },
+
 };
