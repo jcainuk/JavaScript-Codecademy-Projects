@@ -42,7 +42,7 @@ const team = {
     return this._games;
   },
 
-  //
+  // add player
   addPlayer(firstName, lastName, age) {
     const player = {
       firstName,
@@ -51,6 +51,16 @@ const team = {
     };
 
     this._players.push(player);
+  },
+  // add game
+  addGame(opponent, teamPoints, opponentPoints) {
+    const game = {
+      opponent,
+      teamPoints,
+      opponentPoints,
+    };
+
+    this._games.push(game);
   },
 };
 
