@@ -72,9 +72,7 @@ const menu = {
   },
   // get a random dish from menu course
   getRandomDishFromCourse(courseName) {
-    console.log(this._courses);
-    const dishes = this._courses.courseName;
-    console.log(dishes);
+    const dishes = this._courses[courseName];
     const randomIndex = Math.floor(Math.random() * dishes.length);
 
     return dishes[randomIndex];
