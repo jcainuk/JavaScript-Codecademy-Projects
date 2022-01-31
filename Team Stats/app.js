@@ -17,6 +17,22 @@ const team = {
     },
 
   ],
-  _games: [],
+  _games: [
+    {
+      opponent: 'Broncos',
+      teamPoints: 42,
+      opponentPoints: 27,
+    },
+    {
+      opponent: 'Lions',
+      teamPoints: 39,
+      opponentPoints: 43,
+    },
+    {
+      opponent: 'Dragons',
+      teamPoints: 48,
+      opponentPoints: 23,
+    },
+  ],
 
 };
