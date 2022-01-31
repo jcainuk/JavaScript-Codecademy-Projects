@@ -15,7 +15,6 @@ const team = {
       lastName: 'Smith',
       age: 20,
     },
-
   ],
   _games: [
     {
@@ -44,15 +43,15 @@ const team = {
   },
 
   //
-  addplayer(firstName, lastName, age) {
+  addPlayer(firstName, lastName, age) {
     const player = {
       firstName,
       lastName,
       age,
     };
+
     this._players.push(player);
   },
-
 };
 
 team.addPlayer('Steph', 'Curry', 28);
