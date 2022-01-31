@@ -32,6 +32,7 @@ The goal of this repository is to document my progress while learning JavaScript
 
 - Secret Message
 - Whale Talk
+- Meal Maker
 - [Example Project](https://)
 
 ## JavaScript Syntax Portfolio Project
