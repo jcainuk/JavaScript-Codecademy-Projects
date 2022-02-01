@@ -34,6 +34,7 @@ The goal of this repository is to document my progress while learning JavaScript
 - Whale Talk
 - Meal Maker
 - Team Stats
+- Mini Linter
 - [Example Project](https://)
 
 ## JavaScript Syntax Portfolio Project
