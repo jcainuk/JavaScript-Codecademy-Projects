@@ -35,6 +35,7 @@ The goal of this repository is to document my progress while learning JavaScript
 - Meal Maker
 - Team Stats
 - Mini Linter
+- Dog Factory
 - [Example Project](https://)
 
 ## JavaScript Syntax Portfolio Project
