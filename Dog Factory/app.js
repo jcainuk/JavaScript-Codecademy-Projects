@@ -25,9 +25,9 @@ const dogFactory = (name, breed, weight) => {
     get breed() {
       return this._breed;
     },
-    set breed(breed) {
-      if (typeof breed === 'string') {
-        this._breed = breed;
+    set breed(newBreed) {
+      if (typeof newBreed === 'string') {
+        this._breed = newBreed;
       }
       return 'breed should be a string';
     },
@@ -35,9 +35,9 @@ const dogFactory = (name, breed, weight) => {
     get weight() {
       return this._weight;
     },
-    set weight(weight) {
-      if (typeof weight === 'number') {
-        this._weight = weight;
+    set weight(newWeight) {
+      if (typeof newWeight === 'number') {
+        this._weight = newWeight;
       }
       return 'weight should be a number';
     },
