@@ -6,11 +6,11 @@ const unnecessaryWords = ['extremely', 'literally', 'actually'];
 
 /// split story into words array
 const storyWords = story.split(' ');
-// console.log(storyWords.length);
+console.log(`Total Number of words in 'storyWords'${storyWords.length}`);
 
 // remove unnecessary words from storyWords
 const betterWords = storyWords.filter((word) => !unnecessaryWords.includes(word));
-// console.log(betterWords.length)
+console.log(`Total Number of words in 'betterWords'${betterWords.length}`);
 
 // how many times used overused words
 let counter = 0;
@@ -19,7 +19,7 @@ betterWords.forEach((word) => {
     counter++;
   }
 });
-console.log(counter);
+console.log(`The number of times each overused word appears: ${counter}`);
 
 // count number of sentences
 let sentences = 0;
@@ -30,4 +30,4 @@ betterWords.forEach(((word) => {
     sentences += 1;
   }
 }));
-console.log(sentences);
+console.log(`Number of sentences ${sentences}`);
