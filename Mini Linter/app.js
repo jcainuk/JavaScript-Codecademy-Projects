@@ -31,3 +31,6 @@ betterWords.forEach(((word) => {
   }
 }));
 console.log(`Number of sentences ${sentences}`);
+
+// log out betterWords
+console.log(betterWords.join(' '));
