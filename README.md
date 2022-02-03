@@ -26,6 +26,7 @@ The goal of this repository is to document my progress while learning JavaScript
 - Sleep Debt Calculator
 - Training Days
 - Sublength
+- Groceries Challenge
 
 * [Number Guesser](https://jcainuk.github.io/JavaScript-Codecademy-Projects/Number%20Guesser/)
 
