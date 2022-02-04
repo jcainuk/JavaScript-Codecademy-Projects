@@ -25,8 +25,6 @@ The goal of this repository is to document my progress while learning JavaScript
 - Rock, Paper, or Scissors
 - Sleep Debt Calculator
 - Training Days
-- Sublength
-- Groceries Challenge
 
 * [Number Guesser](https://jcainuk.github.io/JavaScript-Codecademy-Projects/Number%20Guesser/)
 
@@ -38,6 +36,9 @@ The goal of this repository is to document my progress while learning JavaScript
 - Team Stats
 - Mini Linter
 - Dog Factory
+- Sublength
+- Groceries Challenge
+- Lodash Project
 - [Example Project](https://)
 
 ## JavaScript Syntax Portfolio Project
