@@ -39,6 +39,7 @@ The goal of this repository is to document my progress while learning JavaScript
 - Sublength
 - Groceries Challenge
 - Lodash Project
+- Credit Card Checker
 - [Example Project](https://)
 
 ## JavaScript Syntax Portfolio Project
