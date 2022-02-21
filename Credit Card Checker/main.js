@@ -56,7 +56,30 @@ const findInvalidCards = (arr) => {
   return invalidCards;
 };
 
-// test
-// console.log(validateCred(valid1));
+// id invalid card companies
+const idInvalidCardCompanies = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    let company;
+    if (arr[i][0] === 3) {
+      company = 'Amex (American Express)';
+      console.log(company, arr[i]);
+    } else if (arr[i][0] === 4) {
+      company = 'Visa';
+      console.log(company, arr[i]);
+    } else if (arr[i][0] === 5) {
+      company = 'Mastercard';
+      console.log(company, arr[i]);
+    } else if (arr[i][0] === 6) {
+      company = 'Discover';
+      console.log(company, arr[i]);
+    }
+  }
+};
 
-console.log(findInvalidCards(batch));
+// tests
+
+// validateCred(valid1);
+
+const invalidCreditCardNumbers = findInvalidCards(batch);
+
+idInvalidCardCompanies(invalidCreditCardNumbers);
