@@ -24,6 +24,7 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 // Add your functions below:
 
+// validate card
 const validateCred = (array) => {
   let sum = 0;
   for (let i = array.length - 2; i >= 0; i--) {
@@ -39,8 +40,23 @@ const validateCred = (array) => {
   const checkDigit = array.pop();
   sum += checkDigit;
   if (sum % 10 === 0) {
-    console.log('VALID credit card number');
-  } else {
-    console.log('INVALID credit card number');
+    return true;
   }
+  return false;
 };
+
+// find invalid cards
+const findInvalidCards = (arr) => {
+  const invalidCards = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (validateCred(arr[i]) === false) {
+      invalidCards.push(arr[i]);
+    }
+  }
+  return invalidCards;
+};
+
+// test
+// console.log(validateCred(valid1));
+
+console.log(findInvalidCards(batch));
