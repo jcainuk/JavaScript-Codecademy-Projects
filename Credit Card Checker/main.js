@@ -25,23 +25,22 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 // Add your functions below:
 
 const validateCred = (array) => {
-  const newArray = [];
+  let sum = 0;
+  for (let i = array.length - 2; i >= 0; i--) {
+    let num = array[i];
 
-  for (let i = array.length - 1; i >= 0; i--) {
-    if (i % 2 > 0) {
-      newArray.push(array[i]);
-    } else if (i % 2 === 0) {
-      // console.log(newArray[i]);
-      const doubleNum = array[i] * 2;
-      if (doubleNum > 9) {
-        newArray.push(doubleNum - 9);
-      } else {
-        newArray.push(doubleNum);
+    if ((array.length - 1 - i) % 2 === 1) {
+      num *= 2;
+      if (num > 9) {
+        num -= 9;
       }
-    }
+    }sum += num;
+  }
+  const checkDigit = array.pop();
+  sum += checkDigit;
+  if (sum % 10 === 0) {
+    console.log('VALID credit card number');
+  } else {
+    console.log('INVALID credit card number');
   }
 };
-
-// test function
-
-validateCred(invalid1);
