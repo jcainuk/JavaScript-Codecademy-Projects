@@ -17,6 +17,7 @@ const mockUpStrand = () => {
 const pAequorFactory = (specimenNum, DNAarray) => ({
   specimenNum,
   DNAarray,
+  // mutate method
   mutate() {
   // generate random base
     const base = returnRandBase();
@@ -31,14 +32,29 @@ const pAequorFactory = (specimenNum, DNAarray) => ({
       this.mutate();
     }
   },
+  // compareDNA method
+  compareDNA(pAequor) {
+    let count = 0;
+
+    for (let i = 0; i < this.DNAarray.length; i++) {
+      if (this.DNAarray[i] === pAequor.DNAarray[i]) {
+        count += 1;
+      }
+    }
+    const percentageDNA = (count * 100) / this.DNAarray.length;
+    console.log(`Specimen #${this.specimenNum} has ${percentageDNA.toFixed(2)}% DNA bases in common with #${pAequor.specimenNum}.`);
+  },
 
 });
 
 // test factory function
 
-const newCreature = pAequorFactory(1, mockUpStrand());
+const newCreature1 = pAequorFactory(1, mockUpStrand());
+const newCreature2 = pAequorFactory(2, mockUpStrand());
 
-console.log(newCreature);
+console.log(newCreature1);
+console.log(newCreature2);
 
-newCreature.mutate();
-console.log(newCreature.DNAarray);
+// newCreature.mutate();
+// console.log(newCreature.DNAarray)
+newCreature1.compareDNA(newCreature2);
