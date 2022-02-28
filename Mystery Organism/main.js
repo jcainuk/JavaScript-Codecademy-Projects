@@ -60,17 +60,16 @@ const pAequorFactory = (specimenNum, DNAarray) => ({
 
 });
 
-// test factory function
+// 30 instances
+const sample = [];
 
-const newCreature1 = pAequorFactory(1, mockUpStrand());
-const newCreature2 = pAequorFactory(2, mockUpStrand());
+let i = 0;
+while (sample.length < 30) {
+  const temp = pAequorFactory(i, mockUpStrand());
+  if (temp.willLikelySurvive() === true) {
+    sample.push(temp);
+    i += 1;
+  }
+}
 
-console.log(newCreature1);
-console.log(newCreature2);
-
-// newCreature.mutate();
-// console.log(newCreature.DNAarray)
-newCreature1.compareDNA(newCreature2);
-
-// check survival
-console.log(newCreature1.willLikelySurvive());
+console.log(sample);
