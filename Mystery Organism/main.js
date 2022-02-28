@@ -45,6 +45,19 @@ const pAequorFactory = (specimenNum, DNAarray) => ({
     console.log(`Specimen #${this.specimenNum} has ${percentageDNA.toFixed(2)}% DNA bases in common with #${pAequor.specimenNum}.`);
   },
 
+  willLikelySurvive() {
+    let CGcount = 0;
+    for (let i = 0; i < this.DNAarray.length; i++) {
+      if (DNAarray[i] === 'C' || DNAarray[i] === 'G') {
+        CGcount += 1;
+      }
+    }
+    if ((CGcount / this.DNAarray.length) * 100 > 60) {
+      return true;
+    }
+    return false;
+  },
+
 });
 
 // test factory function
@@ -58,3 +71,6 @@ console.log(newCreature2);
 // newCreature.mutate();
 // console.log(newCreature.DNAarray)
 newCreature1.compareDNA(newCreature2);
+
+// check survival
+console.log(newCreature1.willLikelySurvive());
