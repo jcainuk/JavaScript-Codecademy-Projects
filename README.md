@@ -41,11 +41,10 @@ The goal of this repository is to document my progress while learning JavaScript
 - Lodash Project
 - Credit Card Checker
 - Mystery Organism
-- [Example Project](https://)
 
 ## JavaScript Syntax Portfolio Project
 
-- [Example Project](https://)
+- Mixed Messages
 
 ## Status
 
