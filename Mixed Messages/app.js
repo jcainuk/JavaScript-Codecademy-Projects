@@ -1,7 +1,7 @@
 // Random inspirational quote generator
 
 // adverbs of frequency array
-const adverbOfFrequency = [
+const adverbsOfFrequency = [
   'always',
   'usually',
   'often',
@@ -9,6 +9,7 @@ const adverbOfFrequency = [
   'rarely',
   'never',
 ];
+
 // adjectives array
 const adjectives = [
   'able',
@@ -72,6 +73,11 @@ const phrasesWithTheVerbSet = [
   'your first novel in Paris',
   'foot in a minefield',
 ];
+
+// function
+const randomAdverb = adverbsOfFrequency[Math.floor(Math.random() * adverbsOfFrequency.length)];
+const randomAdjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+const randomPhrase = phrasesWithTheVerbSet[Math.floor(Math.random() * phrasesWithTheVerbSet.length)];
 
 // example quote
 /* “You are ADVERBOFFREQUENCY too ADJECTIVE to set PHRASEWITHSET
