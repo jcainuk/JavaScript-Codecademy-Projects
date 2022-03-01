@@ -75,10 +75,15 @@ const phrasesWithTheVerbSet = [
 ];
 
 // function
-const randomAdverb = adverbsOfFrequency[Math.floor(Math.random() * adverbsOfFrequency.length)];
-const randomAdjective = adjectives[Math.floor(Math.random() * adjectives.length)];
-const randomPhrase = phrasesWithTheVerbSet[Math.floor(Math.random() * phrasesWithTheVerbSet.length)];
 
-// example quote
-/* “You are ADVERBOFFREQUENCY too ADJECTIVE to set PHRASEWITHSET
- or to dream a new dream.” */
+const generateQuote = () => {
+  // random word variables
+  const randomAdverb = adverbsOfFrequency[Math.floor(Math.random() * adverbsOfFrequency.length)];
+  const randomAdjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+  const randomPhrase = phrasesWithTheVerbSet[Math.floor(Math.random() * phrasesWithTheVerbSet.length)];
+
+  // string interpolation
+  return `You are ${randomAdverb} too ${randomAdjective} to set ${randomPhrase}
+  or to dream a new dream.`;
+};
+console.log(generateQuote());
