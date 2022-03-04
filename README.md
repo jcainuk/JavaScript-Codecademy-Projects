@@ -9,7 +9,8 @@ These are JavaScript projects I have created in Codecademy, primarily under the 
 - [General Info](#general-info)
 - [JavaScript Syntax, Part I](#javascript-syntax-part-i)
 - [JavaScript Syntax, Part II](#javascript-syntax-part-ii)
-- [JavaScript Syntax Portfolio Project](#javascript-syntax-portfolio-project)
+- [Building Interactive Websites with JavaScript](#building-interactive-websites-with-javascript)
+- [JavaScript Syntax, Part III](#javascript-syntax-part-iii)
 - [Status](#status)
 
 ## General Info
@@ -45,6 +46,14 @@ The goal of this repository is to document my progress while learning JavaScript
 ## JavaScript Syntax Portfolio Project
 
 - Mixed Messages
+
+## Building Interactive Websites with JavaScript
+
+- Test
+
+## JavaScript Syntax, Part III
+
+- Test
 
 ## Status
 
