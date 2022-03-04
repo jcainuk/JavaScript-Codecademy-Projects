@@ -11,6 +11,7 @@ These are JavaScript projects I have created in Codecademy, primarily under the 
 - [JavaScript Syntax, Part II](#javascript-syntax-part-ii)
 - [Building Interactive Websites with JavaScript](#building-interactive-websites-with-javascript)
 - [JavaScript Syntax, Part III](#javascript-syntax-part-iii)
+- [Async JavaScript and HTTP Requests](#async-javascript-and-http-requests)
 - [Status](#status)
 
 ## General Info
@@ -52,6 +53,10 @@ The goal of this repository is to document my progress while learning JavaScript
 - Test
 
 ## JavaScript Syntax, Part III
+
+- Test
+
+## Async JavaScript and HTTP Requests
 
 - Test
 
