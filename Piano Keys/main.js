@@ -13,6 +13,7 @@ const keyPlay = (event) => {
 const keyReturn = (event) => {
   event.target.style.backgroundColor = '';
 };
+
 // Write a named function with event handler properties
 const handleNote = (note) => {
   note.addEventListener('mousedown', keyPlay);
@@ -22,6 +23,7 @@ const handleNote = (note) => {
 notes.forEach((note) => {
   handleNote(note);
 });
+
 // These variables store the buttons that progress the user through the lyrics
 const nextOne = document.getElementById('first-next-line');
 const nextTwo = document.getElementById('second-next-line');
@@ -37,6 +39,12 @@ nextThree.hidden = true;
 startOver.hidden = true;
 
 // Write anonymous event handler property and function for the first progress button
+nextOne.addEventListener('click', () => {
+  nextTwo.hidden = false;
+  nextOne.hidden = true;
+  document.getElementById('letter-note-five').innerHTML = 'D';
+  document.getElementById('letter-note-six').innerHTML = 'C';
+});
 
 // Write anonymous event handler property and function for the second progress button
 
