@@ -14,7 +14,10 @@ const keyReturn = (event) => {
   event.target.style.backgroundColor = '';
 };
 // Write a named function with event handler properties
-
+const handleNote = (note) => {
+  note.addEventListener('mousedown', keyPlay);
+  note.addEventListener('mouseup', keyReturn);
+};
 // Write a loop that runs the array elements through the function
 
 // These variables store the buttons that progress the user through the lyrics
