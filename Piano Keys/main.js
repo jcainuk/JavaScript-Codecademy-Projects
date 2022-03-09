@@ -47,7 +47,12 @@ nextOne.addEventListener('click', () => {
 });
 
 // Write anonymous event handler property and function for the second progress button
-
+nextTwo.addEventListener('click', () => {
+  nextThree.hidden = false;
+  nextTwo.hidden = true;
+  document.getElementById('word-five').innerHTML = 'DEAR';
+  document.getElementById('word-six').innerHTML = 'FRI-';
+});
 // Write anonymous event handler property and function for the third progress button
 
 // This is the event handler property and function for the startOver button
