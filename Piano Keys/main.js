@@ -59,6 +59,7 @@ nextTwo.addEventListener('click', () => {
   document.getElementById('letter-note-five').innerHTML = 'C';
   document.getElementById('letter-note-six').innerHTML = 'B';
 });
+
 // Write anonymous event handler property and function for the third progress button
 nextThree.addEventListener('click', () => {
   startOver.hidden = false;
@@ -70,9 +71,17 @@ nextThree.addEventListener('click', () => {
   document.getElementById('word-four').innerHTML = 'DAY';
   document.getElementById('word-five').innerHTML = 'TO';
   document.getElementById('word-six').innerHTML = 'YOU!';
-}
+
+  document.getElementById('letter-note-one').innerHTML = 'F';
+  document.getElementById('letter-note-two').innerHTML = 'F';
+  document.getElementById('letter-note-three').innerHTML = 'E';
+  document.getElementById('letter-note-four').innerHTML = 'C';
+  document.getElementById('letter-note-five').innerHTML = 'D';
+  document.getElementById('letter-note-six').innerHTML = 'C';
+});
+
 // This is the event handler property and function for the startOver button
-startOver.onclick = function () {
+startOver.addEventListener('click', () => {
   nextOne.hidden = false;
   startOver.hidden = true;
   document.getElementById('word-one').innerHTML = 'HAP-';
@@ -87,4 +96,4 @@ startOver.onclick = function () {
   document.getElementById('letter-note-five').innerHTML = 'C';
   document.getElementById('word-six').innerHTML = 'YOU!';
   document.getElementById('letter-note-six').innerHTML = 'B';
-};
+});
