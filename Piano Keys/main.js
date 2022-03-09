@@ -19,7 +19,9 @@ const handleNote = (note) => {
   note.addEventListener('mouseup', keyReturn);
 };
 // Write a loop that runs the array elements through the function
-
+notes.forEach((note) => {
+  handleNote(note);
+});
 // These variables store the buttons that progress the user through the lyrics
 const nextOne = document.getElementById('first-next-line');
 const nextTwo = document.getElementById('second-next-line');
