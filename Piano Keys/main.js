@@ -60,7 +60,10 @@ nextTwo.addEventListener('click', () => {
   document.getElementById('letter-note-six').innerHTML = 'B';
 });
 // Write anonymous event handler property and function for the third progress button
+nextThree.addEventListener('click', () => { startOver.hidden = false;
+  nextThree.hidden = true;
 
+}
 // This is the event handler property and function for the startOver button
 startOver.onclick = function () {
   nextOne.hidden = false;
