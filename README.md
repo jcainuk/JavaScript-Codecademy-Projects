@@ -50,7 +50,7 @@ The goal of this repository is to document my progress while learning JavaScript
 
 ## Building Interactive Websites with JavaScript
 
-- Test
+- [Piano Keys](https://jcainuk.github.io/JavaScript-Codecademy-Projects/Piano%20Keys/)
 
 ## JavaScript Syntax, Part III
 
