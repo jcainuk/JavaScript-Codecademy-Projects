@@ -3,3 +3,10 @@
   padding: 0;
   font-family: sans-serif;
 }
+
+main{
+  width: 100%;
+  /* Below means the height of this element
+   is equal to 100% of the viewport height (vh)/*/
+  height: 100vh;
+}
