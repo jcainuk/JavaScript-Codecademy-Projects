@@ -1,3 +1,9 @@
+// get DOM elements
+const kelvinInput = document.getElementById('kelvin');
+const celsiusInput = document.getElementById('celsius');
+const fahrenheitInput = document.getElementById('fahrenheit');
+const newtonInput = document.getElementById('newton');
+
 // Current temperature forecast in kelvin
 const kelvin = 293;
 
