@@ -24,7 +24,7 @@ for (let i = 0; i < inputs.length; i++) {
     */
     switch (event.target.name) {
       case 'kelvin':
-        celsiusInput.value = value - 273;
+        celsiusInput.value = value - 273.15;
         fahrenheitInput.value = (value - 273.15) * (9 / 5) + 32;
         newtonInput.value = (value - 273.15) * 0.33000;
         break;
