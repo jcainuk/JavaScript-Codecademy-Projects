@@ -10,15 +10,22 @@ const inputs = document.getElementsByClassName('inputs');
 // for loop
 
 for (let i = 0; i < inputs.length; i++) {
+  /* iterate through the inputs section
+  and add an event listener to each individual input
+  */
   const input = inputs[i];
   input.addEventListener('input', (event) => {
+    // save the value of the input as a variable
     const { value } = event.target;
-    // console.log(`${event.target.name} ${value}`);
+
+    /* conditional switch statement to compute new values for
+     each temperature type using event.target.name
+    */
     switch (event.target.name) {
       case 'kelvin':
         celsiusInput.value = value - 273;
         fahrenheitInput.value = (value - 273.15) * (9 / 5) + 32;
-
+        newtonInput.value = 
         break;
 
       case 'celsius':
