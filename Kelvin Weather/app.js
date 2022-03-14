@@ -45,9 +45,9 @@ for (let i = 0; i < inputs.length; i++) {
 
       case 'newton':
         // calculation of other values
-        // kelvinInput.value =
-        // fahrenheitInput.value =
-        // celsiusInput.value =
+        kelvinInput.value = value / 0.33000;
+        fahrenheitInput.value = (value * 5.4545) + 32;
+        celsiusInput.value = value / 0.33000;
         break;
 
       default:
