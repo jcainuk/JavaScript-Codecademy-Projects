@@ -31,8 +31,12 @@ input {
   border-radius: 4px;
   box-sizing: border-box;
   resize: vertical;
+  margin: 10px;
 }
 label {
+  width: 11%;
   padding: 12px 12px 12px 0;
   display: inline-block;
+  margin: 10px;
+  padding: 5px;
 }
