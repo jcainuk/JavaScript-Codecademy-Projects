@@ -16,7 +16,9 @@ for (let i = 0; i < inputs.length; i++) {
     // console.log(`${event.target.name} ${value}`);
     switch (event.target.name) {
       case 'kelvin':
-        // calculation other values
+        celsiusInput.value = value - 273;
+        fahrenheitInput.value = (value - 273.15) * (9 / 5) + 32;
+
         break;
 
       case 'celsius':
