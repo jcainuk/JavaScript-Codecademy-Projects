@@ -51,6 +51,7 @@ The goal of this repository is to document my progress while learning JavaScript
 ## Building Interactive Websites with JavaScript
 
 - [Piano Keys](https://jcainuk.github.io/JavaScript-Codecademy-Projects/Piano%20Keys/)
+- [Form a Story](https://jcainuk.github.io/JavaScript-Codecademy-Projects/Form%20a%20Story/)
 
 ## JavaScript Syntax, Part III
 
