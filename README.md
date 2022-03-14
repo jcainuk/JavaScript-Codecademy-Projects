@@ -20,7 +20,7 @@ The goal of this repository is to document my progress while learning JavaScript
 
 ## JavaScript Syntax, Part I
 
-- Kelvin Weather
+- [Kelvin Weather](https://jcainuk.github.io/JavaScript-Codecademy-Projects/Kelvin%20Weather/)
 - Dog Years
 - Magic Eight Ball
 - Race Day
