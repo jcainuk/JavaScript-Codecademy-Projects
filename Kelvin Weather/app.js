@@ -25,7 +25,7 @@ for (let i = 0; i < inputs.length; i++) {
       case 'kelvin':
         celsiusInput.value = value - 273;
         fahrenheitInput.value = (value - 273.15) * (9 / 5) + 32;
-        newtonInput.value = 
+        newtonInput.value = (value - 273.15) * 0.33000;
         break;
 
       case 'celsius':
