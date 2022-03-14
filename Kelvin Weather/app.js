@@ -31,14 +31,23 @@ for (let i = 0; i < inputs.length; i++) {
 
       case 'celsius':
         // calculation of other values
+        // kelvinInput.value =
+        // fahrenheitInput.value =
+        // newtonInput.value =
         break;
 
       case 'fahrenheit':
         // calculation of other values
+        // kelvinInput.value =
+        // celsiusInput.value =
+        // newtonInput.value =
         break;
 
       case 'newton':
         // calculation of other values
+        // kelvinInput.value =
+        // fahrenheitInput.value =
+        // celsiusInput.value =
         break;
 
       default:
