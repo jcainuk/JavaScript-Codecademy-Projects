@@ -13,7 +13,27 @@ for (let i = 0; i < inputs.length; i++) {
   const input = inputs[i];
   input.addEventListener('input', (event) => {
     const { value } = event.target;
-    console.log(`${event.target.name} ${value}`);
+    // console.log(`${event.target.name} ${value}`);
+    switch (event.target.name) {
+      case 'kelvin':
+        // calculation other values
+        break;
+
+      case 'celsius':
+        // calculation of other values
+        break;
+
+      case 'fahrenheit':
+        // calculation of other values
+        break;
+
+      case 'newton':
+        // calculation of other values
+        break;
+
+      default:
+        break;
+    }
   });
 }
 
