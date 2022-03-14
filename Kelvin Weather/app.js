@@ -32,8 +32,8 @@ for (let i = 0; i < inputs.length; i++) {
       case 'celsius':
         // calculation of other values
         // kelvinInput.value =
-        // fahrenheitInput.value =
-        // newtonInput.value =
+        fahrenheitInput.value = Math.floor(value * (9 / 5) + 32);
+        newtonInput.value = Math.floor(value * (33 / 100));
         break;
 
       case 'fahrenheit':
@@ -55,20 +55,3 @@ for (let i = 0; i < inputs.length; i++) {
     }
   });
 }
-
-// Current temperature forecast in kelvin
-const kelvin = 293;
-
-// Conversion of kelvin to celsius
-const celsius = kelvin - 273;
-
-// Conversion of celsius to fahrenheit and round down result
-const fahrenheit = Math.floor(celsius * (9 / 5) + 32);
-
-console.log(`The temperature is ${fahrenheit} degrees Fahrenheit.`);
-
-// Extra Practice
-// Conversion of celsius to Newton Scale and round down result
-const newton = Math.floor(celsius * (33 / 100));
-
-console.log(`The temperature is ${newton} on the Newton scale.`);
