@@ -12,7 +12,8 @@ const inputs = document.getElementsByClassName('inputs');
 for (let i = 0; i < inputs.length; i++) {
   const input = inputs[i];
   input.addEventListener('input', (event) => {
-
+    const { value } = event.target;
+    console.log(value);
   });
 }
 
