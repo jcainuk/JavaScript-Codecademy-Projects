@@ -7,6 +7,15 @@ const newtonInput = document.getElementById('newton');
 // get the inputs section collectively from the DOM
 const inputs = document.getElementsByClassName('inputs');
 
+// for loop
+
+for (let i = 0; i < inputs.length; i++) {
+  const input = inputs[i];
+  input.addEventListener('input', (event) => {
+
+  });
+}
+
 // Current temperature forecast in kelvin
 const kelvin = 293;
 
