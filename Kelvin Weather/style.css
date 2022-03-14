@@ -23,3 +23,7 @@ h1{
 .inputs{
   text-align: center;
 }
+
+input{
+  margin: 15px;
+}
