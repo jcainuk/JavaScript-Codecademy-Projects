@@ -16,7 +16,8 @@ for (let i = 0; i < inputs.length; i++) {
   const input = inputs[i];
   input.addEventListener('input', (event) => {
     // save the value of the input as a variable
-    const { value } = event.target;
+    // use parseFloat() in case the value is not a number
+    const { value } = parseFloat(event.target);
 
     /* conditional switch statement to compute new values for
      each temperature type using event.target.name
