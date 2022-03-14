@@ -10,3 +10,7 @@ main{
    is equal to 100% of the viewport height (vh)/*/
   height: 100vh;
 }
+
+header{
+  margin-top: 30px;
+}
