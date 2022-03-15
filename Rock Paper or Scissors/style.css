@@ -76,11 +76,7 @@ header {
   margin-bottom: 20px;
 }
 
-.guess-label {
-  font-size: 18px;
-  font-weight: 700;
-  margin: 0;
-}
+
 
 .score-label {
   font-size: 14px;
@@ -88,12 +84,7 @@ header {
   margin: 0;
 }
 
-.target-guess {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-}
+
 
 .computer-guess {
   background-color: #ececec;
