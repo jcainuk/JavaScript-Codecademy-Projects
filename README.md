@@ -24,7 +24,7 @@ The goal of this repository is to document my progress while learning JavaScript
 - Dog Years
 - Magic Eight Ball
 - Race Day
-- Rock, Paper, or Scissors
+- [Rock Paper or Scissors](https://jcainuk.github.io/JavaScript-Codecademy-Projects/Rock%20Paper%20or%20Scissors/)
 - Sleep Debt Calculator
 - Training Days
 
