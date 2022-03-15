@@ -2,18 +2,19 @@ const humanScore = 0;
 const computerScore = 0;
 const currentRoundNumber = 1;
 
-// User Choice
-const getUserChoice = (userInput) => {
-  userInput = userInput.toLowerCase();
-
-  if (userInput === 'rock' || userInput === 'paper' || userInput === 'scissors' || userInput === 'bomb'
-  ) {
-    return userInput;
+// increase winner's score each round
+const updateScore = (winner) => {
+  if (winner === 'human') {
+    humanScore += 1;
+  } else if (winner === 'computer') {
+    computerScore += 1;
   }
-  console.log('ERROR: Invalid user input.');
 };
 
-// Computer Choice
+// update round number
+const advanceRound = () => currentRoundNumber += 1;
+
+// Generate computer choice
 const getComputerChoice = () => {
   const randomNum = Math.floor(Math.random() * 3);
   switch (randomNum) {
@@ -63,16 +64,3 @@ const determineWinner = (userChoice, computerChoice) => {
     return 'The user won!';
   }
 };
-
-// Play Game
-const playGame = () => {
-  const userChoice = getUserChoice('paper');
-  const computerChoice = getComputerChoice();
-
-  console.log(`The USER choice was ${userChoice}`);
-  console.log(`The COMPUTER choice was ${computerChoice}`);
-
-  console.log(determineWinner(userChoice, computerChoice));
-};
-
-playGame();
