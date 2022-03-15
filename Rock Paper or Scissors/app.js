@@ -11,9 +11,6 @@ const updateScore = (winner) => {
   }
 };
 
-// update round number
-const advanceRound = () => currentRoundNumber += 1;
-
 // Generate computer choice
 const getComputerChoice = () => {
   const randomNum = Math.floor(Math.random() * 3);
@@ -35,32 +32,37 @@ const getComputerChoice = () => {
 
 // Determine Winner
 const determineWinner = (userChoice, computerChoice) => {
-  if (userChoice === 'bomb') {
-    return ' The user blew up the computer with a bomb!';
-  }
-
   if (userChoice === computerChoice) {
     return 'The game was a tie!';
   }
 
   if (userChoice === 'rock') {
     if (computerChoice === 'paper') {
+      updateScore('computer');
       return 'The computer won!';
     }
+    updateScore('human');
     return 'The user won!';
   }
 
   if (userChoice === 'paper') {
     if (computerChoice === 'scissors') {
+      updateScore('computer');
       return 'The computer won!';
     }
+    updateScore('human');
     return 'The user won!';
   }
 
   if (userChoice === 'scissors') {
     if (computerChoice === 'rock') {
+      updateScore('computer');
       return 'The computer won!';
     }
+    updateScore('human');
     return 'The user won!';
   }
 };
+
+// update round number
+const advanceRound = () => currentRoundNumber += 1;
