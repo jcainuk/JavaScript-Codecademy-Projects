@@ -8,8 +8,53 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Rock, Paper or Scissors</h1>
+    
+    <div class="game-container">
+      <header>
+        <h1>Rock, Paper or Scissors</h1>
+      </header>
 
+      <div class="rounds">
+        <p class="round-label">Round <span id="round-number">1</span></p>
+        <p class="guess-label">
+          Target Number: <span id="target-number">?</span>
+        </p>
+      </div>
+
+      <div class="guessing-area">
+        <div class="guess computer-guess">
+          <div class="guess-title">
+            <p class="guess-label">Computer</p>
+            <p class="score-label">Score: <span id="computer-score">0</span></p>
+          </div>
+          <p id="computer-guess">?</p>
+          <p class="winning-text" id="computer-wins"></p>
+        </div>
+        <div class="guess human-guess">
+          <div class="guess-title">
+            <p class="guess-label">You</p>
+            <p class="score-label">Score: <span id="human-score">0</span></p>
+          </div>
+          
+        
+      </div>
+
+      <div class="next-round-container">
+        <button class="button" id="next-round" disabled>Next Round</button>
+      </div>
+    </div>
+
+    <div class="instructions">
+      <div class="instruction">
+        <h3>Instructions</h3>
+        <p>Step 1: Choose either rock, paper or scissors</p>
+      </div>
+  
+      <div class="instruction">
+        <h3>Step 2: </h3>
+        <p>Click "Next Round" to play again.</p>
+      </div>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
