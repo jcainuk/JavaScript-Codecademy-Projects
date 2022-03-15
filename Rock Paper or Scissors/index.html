@@ -1,14 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rock, Paper or Scissors</title>
+    <title>Number Guesser</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,700"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
     <div class="game-container">
       <header>
         <h1>Rock, Paper or Scissors</h1>
@@ -35,8 +36,27 @@
             <p class="guess-label">You</p>
             <p class="score-label">Score: <span id="human-score">0</span></p>
           </div>
-          
-        
+          <div class="images">
+            <input
+              type="image"
+              value="rock"
+              alt="rock"
+              src="images/icons8-rock-100.png"
+            />
+            <input
+              type="image"
+              value="paper"
+              alt="paper"
+              src="images/icons8-paper-100.png"
+            />
+            <input
+              type="image"
+              value="scissors"
+              alt="scissors"
+              src="images/icons8-hand-scissors-100.png"
+            />
+          </div>
+        </div>
       </div>
 
       <div class="next-round-container">
@@ -46,15 +66,21 @@
 
     <div class="instructions">
       <div class="instruction">
-        <h3>Instructions</h3>
-        <p>Step 1: Choose either rock, paper or scissors</p>
+        <h3>Step 1</h3>
+        <p>Input a number between 0 and 9</p>
       </div>
-  
       <div class="instruction">
-        <h3>Step 2: </h3>
+        <h3>Step 2</h3>
+        <p>
+          Click "Make a Guess" to submit your guess and see who won the round.
+        </p>
+      </div>
+      <div class="instruction">
+        <h3>Step 3</h3>
         <p>Click "Next Round" to play again.</p>
       </div>
     </div>
-    <script src="app.js"></script>
+
+    <script src="./app.js"></script>
   </body>
 </html>
