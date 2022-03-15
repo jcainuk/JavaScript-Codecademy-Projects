@@ -1,3 +1,7 @@
+const humanScore = 0;
+const computerScore = 0;
+const currentRoundNumber = 1;
+
 // User Choice
 const getUserChoice = (userInput) => {
   userInput = userInput.toLowerCase();
