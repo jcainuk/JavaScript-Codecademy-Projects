@@ -26,5 +26,10 @@ for (let i = 0; i < inputs.length; i++) {
     console.log('Computer Choice:', currentComputerChoice);
     // Display the computer guess
     computerGuessDisplay.innerText = currentComputerChoice;
+
+    // Determine winner
+    // Determine if the human or computer wins:
+    const humanIsWinner = determineWinner(currentHumanChoice, currentComputerChoice);
+    console.log(humanIsWinner);
   });
 }

@@ -38,28 +38,25 @@ const determineWinner = (userChoice, computerChoice) => {
 
   if (userChoice === 'rock') {
     if (computerChoice === 'paper') {
-      updateScore('computer');
       return 'The computer won!';
     }
-    updateScore('human');
+
     return 'The user won!';
   }
 
   if (userChoice === 'paper') {
     if (computerChoice === 'scissors') {
-      updateScore('computer');
       return 'The computer won!';
     }
-    updateScore('human');
+
     return 'The user won!';
   }
 
   if (userChoice === 'scissors') {
     if (computerChoice === 'rock') {
-      updateScore('computer');
       return 'The computer won!';
     }
-    updateScore('human');
+
     return 'The user won!';
   }
 };
