@@ -33,31 +33,37 @@ const getComputerChoice = () => {
 // Determine Winner
 const determineWinner = (userChoice, computerChoice) => {
   if (userChoice === computerChoice) {
-    return 'The game was a tie!';
+    console.log('The game was a tie!');
+    return false;
   }
 
   if (userChoice === 'rock') {
     if (computerChoice === 'paper') {
-      return 'The computer won!';
+      console.log('The computer won!');
+      return false;
     }
 
-    return 'The user won!';
+    console.log('The user won!');
+    return true;
   }
 
   if (userChoice === 'paper') {
     if (computerChoice === 'scissors') {
-      return 'The computer won!';
+      console.log('The computer won!');
+      return false;
     }
 
-    return 'The user won!';
+    console.log('The user won!');
+    return true;
   }
 
   if (userChoice === 'scissors') {
     if (computerChoice === 'rock') {
-      return 'The computer won!';
+      console.log('The computer won!');
+      return false;
     }
-
-    return 'The user won!';
+    console.log('The user won!');
+    return true;
   }
 };
 
