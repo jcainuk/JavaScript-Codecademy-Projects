@@ -1,14 +1,11 @@
 // create variables for all html elements
 
 const inputs = document.getElementsByClassName('images');
-const roundNumberDisplay = document.getElementById('round-number');
+
 const computerGuessDisplay = document.getElementById('computer-guess');
-const humanScoreDisplay = document.getElementById('human-score');
+
 const computerScoreDisplay = document.getElementById('computer-score');
 const computerWinsDisplay = document.getElementById('computer-wins');
-
-const humanWinsDisplay = document.getElementById('human-wins');
-const nextRoundButton = document.getElementById('next-round');
 
 // for loop
 
@@ -39,7 +36,8 @@ for (let i = 0; i < inputs.length; i++) {
     } if (humanIsWinner === true) {
       return computerWinsDisplay.textContent = 'You win!';
     }
-
-    return computerWinsDisplay.textContent = 'You lose!';
+    if (humanIsWinner === false) {
+      return computerWinsDisplay.textContent = 'You lose!';
+    }
   });
 }

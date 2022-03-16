@@ -1,19 +1,3 @@
-let humanScore = 0;
-let computerScore = 0;
-let currentRoundNumber = 1;
-
-// increase winner's score each round
-const updateScore = (winner) => {
-  if (winner === 'human') {
-    humanScore += 1;
-  } else if (winner === 'computer') {
-    computerScore += 1;
-  } else {
-    computerScore += 0;
-    humanScore += 0;
-  }
-};
-
 // Generate computer choice
 const getComputerChoice = () => {
   const randomNum = Math.floor(Math.random() * 3);
@@ -68,6 +52,3 @@ const determineWinner = (userChoice, computerChoice) => {
     return true;
   }
 };
-
-// update round number
-const advanceRound = () => currentRoundNumber += 1;
