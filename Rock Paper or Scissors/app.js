@@ -8,6 +8,9 @@ const updateScore = (winner) => {
     humanScore += 1;
   } else if (winner === 'computer') {
     computerScore += 1;
+  } else {
+    computerScore += 0;
+    humanScore += 0;
   }
 };
 

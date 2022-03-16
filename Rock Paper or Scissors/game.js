@@ -39,6 +39,7 @@ for (let i = 0; i < inputs.length; i++) {
     } if (humanIsWinner === true) {
       return computerWinsDisplay.textContent = 'You win!';
     }
+
     return computerWinsDisplay.textContent = 'You lose!';
   });
 }
