@@ -1,6 +1,6 @@
-const humanScore = 0;
-const computerScore = 0;
-const currentRoundNumber = 1;
+let humanScore = 0;
+let computerScore = 0;
+let currentRoundNumber = 1;
 
 // increase winner's score each round
 const updateScore = (winner) => {
