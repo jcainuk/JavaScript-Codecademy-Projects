@@ -33,8 +33,7 @@ const getComputerChoice = () => {
 // Determine Winner
 const determineWinner = (userChoice, computerChoice) => {
   if (userChoice === computerChoice) {
-    console.log('The game was a tie!');
-    return false;
+    return 'The game was a tie!';
   }
 
   if (userChoice === 'rock') {

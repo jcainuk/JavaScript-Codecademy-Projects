@@ -5,8 +5,9 @@ const roundNumberDisplay = document.getElementById('round-number');
 const computerGuessDisplay = document.getElementById('computer-guess');
 const humanScoreDisplay = document.getElementById('human-score');
 const computerScoreDisplay = document.getElementById('computer-score');
-const targetNumberDisplay = document.getElementById('target-number');
 const computerWinsDisplay = document.getElementById('computer-wins');
+
+const humanWinsDisplay = document.getElementById('human-wins');
 const nextRoundButton = document.getElementById('next-round');
 
 // for loop
@@ -31,6 +32,13 @@ for (let i = 0; i < inputs.length; i++) {
     // Determine if the human or computer wins:
     const humanIsWinner = determineWinner(currentHumanChoice, currentComputerChoice);
     console.log(humanIsWinner);
-    const winner = humanIsWinner ? 'human' : 'computer';
+
+    // Display the winner
+    if (humanIsWinner === 'The game was a tie!') {
+      return computerWinsDisplay.textContent = 'The game was a tie!';
+    } if (humanIsWinner === true) {
+      return computerWinsDisplay.textContent = 'You win!';
+    }
+    return computerWinsDisplay.textContent = 'You lose!';
   });
 }
