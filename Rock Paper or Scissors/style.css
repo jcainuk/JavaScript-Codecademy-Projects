@@ -60,6 +60,7 @@ header {
   
  background-color: blue;
 }
+.guess .images input:active {background-color: yellow;}
 
 .guessing-area {
   display: flex;
@@ -172,6 +173,8 @@ width: 60px;
 }
 
 .winning-text, .winning-text[disabled] {
-  color: #ec3636;
+  color: black;
   font-weight: 700;
+  font-size: 25px;
+  text-align: center;
 }
