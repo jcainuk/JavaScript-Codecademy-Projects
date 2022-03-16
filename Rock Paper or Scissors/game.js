@@ -1,4 +1,13 @@
+// create variables for all html elements
+
 const inputs = document.getElementsByClassName('images');
+const roundNumberDisplay = document.getElementById('round-number');
+const computerGuessDisplay = document.getElementById('computer-guess');
+const humanScoreDisplay = document.getElementById('human-score');
+const computerScoreDisplay = document.getElementById('computer-score');
+const targetNumberDisplay = document.getElementById('target-number');
+const computerWinsDisplay = document.getElementById('computer-wins');
+const nextRoundButton = document.getElementById('next-round');
 
 // for loop
 
