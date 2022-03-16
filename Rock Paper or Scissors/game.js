@@ -18,8 +18,13 @@ for (let i = 0; i < inputs.length; i++) {
   const input = inputs[i];
   input.addEventListener('click', (event) => {
     // save the value of the input as a variable
-    // use parseFloat() in case the value is not a number
-    const { value } = event.target;
-    console.log(value);
+
+    const currentHumanChoice = event.target.value;
+    const currentComputerChoice = getComputerChoice();
+
+    console.log('Human Choice:', currentHumanChoice);
+    console.log('Computer Choice:', currentComputerChoice);
+    // Display the computer guess
+    computerGuessDisplay.innerText = currentComputerChoice;
   });
 }
