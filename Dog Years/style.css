@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+main{
+  width: 100%;
+  /* Below means the height of this element
+   is equal to 100% of the viewport height (vh)/*/
+  height: 100vh;
+}
+
+header{
+  margin-top: 30px;
+}
+
+h1{
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.inputs{
+  text-align: center;
+}
+
+input {
+
+  padding: 12px;
+  border: 1px solid black;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+  margin: 10px;
+}
+label {
+  width: 11%;
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  margin: 10px;
+  padding: 5px;
+}
