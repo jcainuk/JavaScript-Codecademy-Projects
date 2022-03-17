@@ -4,6 +4,7 @@ console.log(formElements);
 const humanInput = document.getElementById('human-age');
 const dogInput = document.getElementById('dog-age');
 
+const humanToDogYears = () => {};
 // Age variable
 const myAge = 33;
 
