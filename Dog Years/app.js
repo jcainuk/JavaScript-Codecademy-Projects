@@ -1,3 +1,6 @@
+const formElements = document.getElementsByName('form');
+console.log(formElements);
+
 // Age variable
 const myAge = 33;
 
