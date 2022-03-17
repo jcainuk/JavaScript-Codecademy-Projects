@@ -34,5 +34,7 @@ console.log(`My name is ${myName}. I am ${myAge} years old in human years which 
 for (let i = 0; i < formElements.length; i++) {
   const input = formElements[i];
   console.log(input);
-  input.addEventListener('input', (event) => {});
+  input.addEventListener('input', (event) => {
+    const value = parseFloat(event.target.value);
+  });
 }
