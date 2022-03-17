@@ -1,4 +1,4 @@
-const formElements = document.getElementsByName('form');
+const formElements = document.querySelectorAll('input');
 console.log(formElements);
 
 const humanInput = document.getElementById('human-age');
@@ -29,3 +29,9 @@ const myName = 'Jonathan'.toLowerCase();
 
 //  Sentence to show your name and age in dog years
 console.log(`My name is ${myName}. I am ${myAge} years old in human years which is ${myAgeInDogYears} years old in dog years.`);
+
+// for loop
+for (let i = 0; i < formElements.length; i++) {
+  const input = formElements[i];
+  console.log(input);
+}
