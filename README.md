@@ -21,7 +21,7 @@ The goal of this repository is to document my progress while learning JavaScript
 ## JavaScript Syntax, Part I
 
 - [Kelvin Weather](https://jcainuk.github.io/JavaScript-Codecademy-Projects/Kelvin%20Weather/)
-- Dog Years
+- [Dog Years](https://jcainuk.github.io/JavaScript-Codecademy-Projects/Dog%20Years/)
 - Magic Eight Ball
 - Race Day
 - [Rock Paper or Scissors](https://jcainuk.github.io/JavaScript-Codecademy-Projects/Rock%20Paper%20or%20Scissors/)
