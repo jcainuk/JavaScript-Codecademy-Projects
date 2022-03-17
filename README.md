@@ -1,6 +1,6 @@
 # Codecademy Projects\* | JavaScript
 
-These are JavaScript projects I have created in Codecademy, primarily under the Full-Stack Engineer Career Path.
+These are JavaScript projects I have created in Codecademy, primarily under the Full-Stack Engineer Career Path. Currently, many of the projects consist of code snippets but with others have implemented the DOM where appropriate.
 
 ###### \*Currently, the projects mainly consist of code snippets.
 
