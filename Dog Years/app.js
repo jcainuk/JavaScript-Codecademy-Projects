@@ -36,5 +36,18 @@ for (let i = 0; i < formElements.length; i++) {
   console.log(input);
   input.addEventListener('input', (event) => {
     const value = parseFloat(event.target.value);
+
+    switch (event.target.name) {
+      case 'human-age':
+        // dogInput.value = ;
+        break;
+
+      case 'dog-age':
+        // humanInput.value = ;
+        break;
+
+      default:
+        break;
+    }
   });
 }
